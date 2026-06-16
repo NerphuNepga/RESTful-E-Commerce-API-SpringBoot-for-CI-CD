@@ -2,7 +2,7 @@ name: Continuous Integration (Build)
 
 on:
   push:
-    branches: [ "develop", "main", "master" ]
+    branches: [ "**" ]
   pull_request:
     branches: [ "develop", "main", "master" ]
 
