@@ -41,6 +41,14 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/NerphuNepga/RESTful-E-Commerce-API-SpringBoot-for-CI-CD</url>
+    </repository>
+  </distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
