@@ -43,7 +43,7 @@ public class ProductServiceTest {
         
         assertNotNull(result);
         assertEquals(1, result.size());
-        assertEquals("Meja Rusak", result.get(0).getName()); // INTENTIONAL FAILURE FOR CI/CD TEST
+        assertEquals("Meja", result.get(0).getName());
         verify(productRepository, times(1)).findAll();
     }
 }
