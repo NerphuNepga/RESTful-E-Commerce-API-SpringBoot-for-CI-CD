@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - develop
-  release: 
-    types: [created]
 
 permissions:
   contents: write
@@ -26,7 +24,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Deploy Package
-        run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+        run: mvn deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
